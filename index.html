@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oris cosmetics</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #D5D5DB;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            line-height: 1.5;
+
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+            padding-bottom: 100px;
+        }
+        .logo {
+            max-width: 300px;
+            margin-top: 70px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        a {
+            color: #8B4E8A;
+            text-decoration: none;
+            border-bottom: 1px solid #8B4E8A;
+        }
+        a:hover {
+            border-bottom: none;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1000px;
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .image-container {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 30px;
+            max-width: 585px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .text-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .text-container a {
+            display: inline-block;
+            width: auto;
+            padding: 7px;
+            border-radius: 10px;
+            color: #8B4E8A;
+            border: 1px solid #8B4E8A;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .text-container h1 {
+            margin-top: 0;
+        }
+
+        .text-container a:hover {
+            background-color: #8B4E8A;
+            color: #fff;
+        }
+
+        hr {
+            width: 100%;
+            margin: 60px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                padding-right: 0;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .text-container {
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="oris.svg" alt="Oris Logo" class="logo">
+    <div class="contact-info">
+        <h2>Get in touch</h2>
+        <p>Ing. Tomáš Palas | <a href="mailto:tomas@orisbeauty.com"><strong>tomas@orisbeauty.com</strong></a>
+         | <a href="tel:+420252252746">+420 252 252 746</a></p>
+        <p>Oris cosmetics s.r.o., Karlovo namesti 2097/10, Prague 12000, CZ</p>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="./koolman-item.jpg" alt="Koolman Products">
+        </div>
+        <div class="text-container">
+            <h1>Koolman</h1>
+            <p><strong>Men&apos;s cosmetics</strong><br>
+            Helping men feel and look their best</p>
+            <a href="./koolman-catalogue.pdf" target="_blank">Product catalog (EN)</a><br>
+            <a href="https://koolman.cz/en" target="_blank">Website (EN)</a><br>
+            <a href="https://koolman.cz" target="_blank">Website (CZ)</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="./glowtella-item.jpg" alt="Glowtella Products">
+        </div>
+        <div class="text-container">
+            <h1>Glowtella</h1>
+            <p>
+                <strong>All-natural epilation paste from dates &amp; figs</strong><br>
+                Original oriental recipe
+            </p>
+            <a href="./glowtella-catalogue.pdf" target="_blank">Product catalog (EN)</a><br>
+            <a href="https://glowtella.com/" target="_blank">Website (EN)</a><br>
+            <a href="https://glowtella.cz" target="_blank">Website (CZ)</a>
+        </div>
+    </div>
+</body>
+</html>
